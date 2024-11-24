@@ -6,88 +6,243 @@
     <title>The Psychology of Financial Success - Free Ebook by Marco Cierpe</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-background {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+        }
+        .hover-lift {
+            transition: transform 0.2s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
-    <div class="hero-gradient text-white bg-blue-900">
+    <!-- Hero Section -->
+    <div class="gradient-background min-h-screen relative overflow-hidden">
+        <!-- Navigation -->
         <nav class="container mx-auto px-4 py-6">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">Marco Cierpe</div>
+                <div class="text-2xl font-bold text-white">Marco Cierpe</div>
+                <div class="text-blue-200 hover:text-white transition-colors">
+                    <a href="#about" class="ml-4">About</a>
+                </div>
             </div>
         </nav>
 
+        <!-- Hero Content -->
         <div class="container mx-auto px-4 py-20">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <h1 class="text-5xl font-bold leading-tight">
-                        Transform Your Financial Mindset
+                <!-- Left Column -->
+                <div class="space-y-8">
+                    <h1 class="text-5xl font-bold text-white leading-tight">
+                        Master The Psychology of 
+                        <span class="text-blue-300">Financial Success</span>
                     </h1>
-                    <p class="text-xl text-blue-200">
-                        Master the psychology behind financial success
+                    <p class="text-xl text-blue-100">
+                        Discover how your mindset shapes your financial future and learn proven strategies to transform your relationship with money.
                     </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-blue-300 mr-2"></i>
-                            <span>Practical Tools & Exercises</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-blue-300 mr-2"></i>
-                            <span>Real-world Examples</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check-circle text-blue-300 mr-2"></i>
-                            <span>Step-by-step Action Plans</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 text-blue-100">
+                            <i class="fas fa-check-circle text-blue-300"></i>
+                            <span>Understand Your Financial Psychology</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-blue-100">
+                            <i class="fas fa-check-circle text-blue-300"></i>
+                            <span>Master Emotional Triggers</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-blue-100">
+                            <i class="fas fa-check-circle text-blue-300"></i>
+                            <span>Develop Wealth-Building Habits</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="relative bg-blue-800 p-8 rounded-lg shadow-xl">
-                    <h2 class="text-2xl font-bold mb-6 text-center">Get Your Free Copy Today</h2>
-                    <form action="https://formsubmit.co/cierpeh@gmail.com" method="POST" class="space-y-4">
-                        <input type="hidden" name="_next" value="https://mcierpe1.github.io/thank-you.html">
+
+                <!-- Right Column - Sign Up Form -->
+                <div class="glass-effect rounded-xl p-8 shadow-2xl">
+                    <h2 class="text-2xl font-bold text-white mb-6 text-center">Get Your Free Copy Today</h2>
+                    <form action="https://formsubmit.co/cierpeh@gmail.com" method="POST" class="space-y-6">
+                        <input type="hidden" name="_next" value="https://mcierpe1.github.io/github.io/thank-you.html">
                         <input type="hidden" name="_subject" value="New download request for The Psychology of Financial Success!">
                         
                         <div>
-                            <label class="block text-blue-200 mb-2" for="name">Name</label>
-                            <input type="text" name="name" class="w-full px-4 py-2 rounded-lg border text-gray-800" required>
+                            <label class="block text-blue-100 mb-2" for="name">Name</label>
+                            <input type="text" name="name" 
+                                class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-blue-200 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                required
+                                placeholder="Enter your name">
                         </div>
                         <div>
-                            <label class="block text-blue-200 mb-2" for="email">Email</label>
-                            <input type="email" name="email" class="w-full px-4 py-2 rounded-lg border text-gray-800" required>
+                            <label class="block text-blue-100 mb-2" for="email">Email</label>
+                            <input type="email" name="email" 
+                                class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-blue-200 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                                required
+                                placeholder="Enter your email">
                         </div>
-                        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
+                        <button type="submit" 
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 hover:shadow-lg">
                             Download Now
                         </button>
+                        <p class="text-sm text-blue-200 text-center">
+                            <i class="fas fa-lock mr-2"></i>
+                            Your information is secure and will never be shared
+                        </p>
                     </form>
                 </div>
             </div>
         </div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-400 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
     </div>
 
-    <main class="container mx-auto px-4 py-16">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What You'll Learn</h2>
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">What You'll Learn</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-brain text-3xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Emotional Management</h3>
-                    <p class="text-gray-600">Master your financial emotional triggers</p>
+                <!-- Feature 1 -->
+                <div class="p-6 bg-white rounded-xl shadow-lg hover-lift">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Financial Psychology</h3>
+                    <p class="text-gray-600">
+                        Understanding the mental patterns and emotional triggers that influence your financial decisions.
+                    </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-chart-line text-3xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Decision Making</h3>
-                    <p class="text-gray-600">Learn the 24-Hour Decision Protocol</p>
+
+                <!-- Feature 2 -->
+                <div class="p-6 bg-white rounded-xl shadow-lg hover-lift">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Decision Making</h3>
+                    <p class="text-gray-600">
+                        Master the 24-Hour Decision Protocol for making better financial choices.
+                    </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <i class="fas fa-tasks text-3xl text-blue-600 mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Action Plans</h3>
-                    <p class="text-gray-600">Step-by-step implementation guides</p>
+
+                <!-- Feature 3 -->
+                <div class="p-6 bg-white rounded-xl shadow-lg hover-lift">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Action Plans</h3>
+                    <p class="text-gray-600">
+                        Practical exercises and step-by-step implementation strategies.
+                    </p>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Marco Cierpe. All rights reserved.</p>
+    <!-- Book Preview Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Inside The Book</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Chapter Previews -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="font-semibold text-lg mb-4">Key Chapters</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-book text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Understanding Money Mindset</span>
+                                    <p class="text-gray-600 text-sm">Discover your financial personality type</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-book text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Emotional Triggers</span>
+                                    <p class="text-gray-600 text-sm">Identify and manage financial stress points</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-book text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Building Wealth Habits</span>
+                                    <p class="text-gray-600 text-sm">Create sustainable financial behaviors</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Resources -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="font-semibold text-lg mb-4">Included Resources</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Decision Making Templates</span>
+                                    <p class="text-gray-600 text-sm">Ready-to-use financial decision frameworks</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-tasks text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Action Worksheets</span>
+                                    <p class="text-gray-600 text-sm">Practical exercises for implementation</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-pie text-blue-500 mt-1 mr-3"></i>
+                                <div>
+                                    <span class="font-medium">Progress Trackers</span>
+                                    <p class="text-gray-600 text-sm">Monitor your financial mindset growth</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">About the Author</h2>
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-user text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Marco Cierpe</h3>
+                    <p class="text-gray-600 mb-6">
+                        Financial Psychology Expert & Author
+                    </p>
+                </div>
+                <p class="text-gray-600">
+                    With years of experience in financial psychology and personal development, 
+                    Marco helps individuals understand and transform their relationship with money. 
+                    Through his research and practical approach, he has helped thousands of people 
+                    develop a healthier and more successful financial mindset.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-gray-400 mb-4">&copy; 2024 Marco Cierpe. All rights reserved.</p>
+                <p class="text-sm text-gray-500">
+                    The information provided in this ebook is for educational purposes only.
+                </p>
+            </div>
         </div>
     </footer>
 </body>
